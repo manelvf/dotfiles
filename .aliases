@@ -1,0 +1,31 @@
+# git general commands
+
+alias current_branch="git branch | grep \* | cut -d ' ' -f2"
+
+# push to upstream
+# notice the double string substitution, first '{}' then '()'
+alias gpfu='git push -f upstream ${$(current_branch)}'
+# same as previous but with origin 
+alias gpfo='git push -f origin ${$(current_branch)}'
+
+# checkout new branch setting upstream to upstream/master
+alias gcbu='git checkout -b ${$(current_branch)) upstream/master'
+alias guu='$1'
+
+
+alias gprm="git pull --rebase upstream master"
+alias gprmo="git pull --rebase origin master"
+
+# dot files tracking
+alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+
+# deployment
+
+alias deploy="(cd ../lambdas && ./scripts/package.sh) && terraform apply -auto-approve"
+alias clean_deploy="(cd ../lambdas && ./scripts/clean.sh && ./scripts/package.sh) && terraform apply -auto-approve"
+
+alias reset_last_commit="git reset --soft HEAD~1"
+
+alias agin="ag --ignore=node_modules"
+
