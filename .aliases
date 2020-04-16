@@ -13,7 +13,7 @@ alias gcbu='git checkout -b ${$(current_branch)) upstream/master'
 alias guu='$1'
 
 
-alias gprm="git pull --rebase upstream master"
+alias gprmu="git pull --rebase upstream master"
 alias gprmo="git pull --rebase origin master"
 
 # dot files tracking
@@ -28,4 +28,6 @@ alias clean_deploy="(cd ../lambdas && ./scripts/clean.sh && ./scripts/package.sh
 alias reset_last_commit="git reset --soft HEAD~1"
 
 alias agin="ag --ignore=node_modules"
+
+alias start_mysql_mac="mysql.server start"
 

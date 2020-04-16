@@ -117,3 +117,15 @@ source $HOME/.aliases
 HISTSIZE=5000
 HISTFILESIZE=10000
 export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
+export PATH="$PATH:/Users/jvillar/programa/flutter/bin"
+
+export PATH="$PATH:/Users/jvillar/Library/Android/sdk/tools:/Users/jvillar/Library/Android/sdk/platform-tools:/Users/jvillar/Library/Android/sdk/build-tools:/Users/jvillar/Library/Android/sdk/tools/bin"
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
+export PATH="/Users/jvillar/Library/Python/3.8/bin:$PATH"
+
