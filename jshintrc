@@ -1,0 +1,6 @@
+{
+	"trailing": true,
+	"unused": "vars",
+	"curly": true,
+	"es3": true
+}
