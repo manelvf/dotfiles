@@ -1,0 +1,54 @@
+Host gitlab
+  HostName gitlab.com
+  User manelvillar
+  IdentityFile /home/manelvillar/.ssh/id_snom
+  IdentitiesOnly yes
+
+Host runner
+  Hostname 10.110.17.1
+  User manel
+  IdentityFile /home/manelvillar/.ssh/id_snom
+  ServerAliveInterval 120
+  ServerAliveCountMax 3
+
+Host portal
+  Hostname sina-portal.snom.com
+  User manel
+  IdentityFile /home/manelvillar/.ssh/id_snom
+  IdentitiesOnly yes
+
+Host manelvm
+  Hostname 10.110.16.34
+  User manel
+  IdentityFile /home/manelvillar/.ssh/id_snom
+  IdentitiesOnly yes
+
+Host git-codecommit.*.amazonaws.com
+User APKAYWGQ6VFJVYPPB6XI
+IdentityFile /home/manelvillar/.ssh/id_snom
+
+
+Host production
+    Hostname sina-production.snom.com
+    User manel
+    IdentityFile /home/manelvillar/.ssh/id_manel
+    IdentitiesOnly yes
+
+
+Host newrunner
+    Hostname 10.110.10.75
+    User manel
+    IdentityFile /home/manelvillar/.ssh/id_manel
+
+
+Host newproduction
+    Hostname 10.110.10.168
+    User sina
+    IdentityFile /home/manelvillar/.ssh/id_snom
+
+
+Host proxmox
+    Hostname 10.110.10.93
+    User manel
+    IdentityFile /home/manelvillar/.ssh/id_snom
+
